@@ -220,7 +220,7 @@ nav.header-nav-links li {
   height: auto;
   background-color: var(--color-background);
   color: var(--color-text);
-  margin: 0 10%;
+  margin: 0 5%;
   padding: 20px;
   bottom: -45px;
   border-radius: 8px;
@@ -244,7 +244,11 @@ nav.header-nav-links li {
 
 
 .hero-searchbox-item-1 {
-  width: 25%;
+  width:30%;
+}
+
+.hero-searchbox-item-1 {
+  width:30%;
 }
 .searchbox-items-icon {
   color: var(--color-green-light);
@@ -274,7 +278,7 @@ nav.header-nav-links li {
 }
 
 .searchbox-searchbar {
-  width: 25%;
+  width: 15%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -701,12 +705,13 @@ display: none !important;
 .popularcity-filter-btns {
   overflow-x: auto;
   height: auto;
-  display: flex;
+  display: flex
+;
   justify-content: space-evenly;
   flex-direction: row;
   padding: 30px 5px;
   max-width: 100%;
-  margin: 0 5%;
+  /* margin: 0 5%; */
   overflow-x: auto;
   scrollbar-width: 0;
 }

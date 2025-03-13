@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import cityData from "../../public/assets/data/popularTour.json";
+import tourData from "../../public/assets/data/tourData.json";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import testImage from "../../public/assets/images/alaska.jpg";
@@ -18,11 +20,23 @@ const Popularcities = () => {
   };
 
   const [selectedCity, setSelectedCity] = useState(cityData[0].id);
+  const [ selectedTourCity, setSelectedTourCity ] = useState ( tourData.cities[0].id);
+
 
   const handleFilterClick = (cityId) => {
     setSelectedCity(cityId);
+    setSelectedTourCity(cityId);
+    console.log( " tourCity details: ", selectedTourCity)
+    console.log(" image from the tourCIty:  ", tourCity.image)
+    console.log( " tourCity Name: ", tourCity.city_name)
+    // console.log("  tourCIty: descriptions  ", tourCity.description)
+
   };
+
   const city = cityData.find((city) => city.id === selectedCity);
+  const tourCity = tourData.cities.find((tourCity)=> tourCity.id  === selectedTourCity);
+
+  
 
   return (
     <div className="popularcity-wrapper">
@@ -35,14 +49,17 @@ const Popularcities = () => {
             cultural richness and unforgettable experiences.
           </p>
         </div>
-        <div className="popularcity-filter-btns">
-            {cityData.map((city) => (
+
+      
+
+          <div className="popularcity-filter-btns">
+            {tourData.cities.map((tourCity) => (
               <div
-                key={city.id}
+                key={tourCity.id}
                 className="popular-btns"
-                onClick={() => handleFilterClick(city.id)}
+                onClick={() => handleFilterClick(tourCity.id)}
               >
-                {city.name}
+                {tourCity.city_name}
               </div>
             ))}
           </div>
@@ -52,10 +69,11 @@ const Popularcities = () => {
 
 
 
+
         <div className="popularcity-banner-image">
           <Image
-            src={city.image}
-            alt={`${city.name} Image`}
+            src={tourCity.image}
+            alt={`${tourCity.image_alt} Image`}
             width={800}
             height={400}
             style={{ width: "100%", height: "200px", objectFit: "cover" }}
@@ -65,8 +83,8 @@ const Popularcities = () => {
         <div className="popularcity-banner-city-info ">
           <div className="popularcity-banner-city-info-content w-full lg:w-2/3">
             <div className="popularcity-banner-city-info-content-text-heading">
-              <h2>{city.name}</h2>
-              <p>{city.description}</p>
+              <h2>{tourCity.city_name}</h2>
+              <p>{tourCity.description}</p>
             </div>
           </div>
           <div className=" tag-items-wrapper  w-full md:w-1/3 h-full">
