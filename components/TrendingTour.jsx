@@ -9,8 +9,10 @@ import TestImage from "../public/assets/images/gallery/lake.jpg";
 import { FcLike } from "react-icons/fc";
 import { IoIosShareAlt } from "react-icons/io";
 import TestImage2 from "../public/assets/images/curve.svg";
+import { IoLocation } from "react-icons/io5";
+import { IoMdStar } from "react-icons/io";
 
-const TrendingTour = () => {
+const   TrendingTour = () => {
   return (
     <div className="trending-tour-wrapper">
       <div className="trending-tour-gradient-overlay"></div>
@@ -35,36 +37,54 @@ const TrendingTour = () => {
                 />
               </div>
               <div className="trending-tour-swiper-slide-information">
-                <div className="trending-tour-swiper-slide-information-title">
+                <div className="trending-tour-swiper-slide-information-title" style={{alignItems:'center'}}>
                   <h1> WilderLife of Alaska</h1>
-                  <p className="mt-[20px]">
-                    <span>Alaska, USA</span> {" "}
-                      4.9 stars
-                    ( 300 reviews) 
-                    
+                  <div className="trending-tour-swiper-slide-information-title-subinfo mt-[20px]">
+                    <span className="inline-flex">
+                      {" "}
+                      <IoLocation />{" "}
+                    </span>
+                    Alaska, USA 
+                    <span className="trending-tour-borddr-right"></span>
+                    <p className="review-stars inline-flex m-[ 0 5px] ">
+                      <span>
+                        <IoMdStar />
+
+                        <IoMdStar />
+
+                        <IoMdStar />
+                        <IoMdStar />
+
+                        <IoMdStar />
+                      </span>
+
+                    </p>
+                    {""} 4.9 stars ( 300 reviews)
+                  </div>
+                  <p className="mb-[20px]">
+                    This is the first slide it is a long established fact that a
+                    reader will be distracted by the readable content of a page
+                    when looking at its layout.
                   </p>
-                  <p className="mb-[20px]">This is the first slide it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>
                 <div className="trending-tour-swiper-slide-information-links">
                   <div className="trending-tour-swiper-slide-information-links-btn">
                     <Link href="/">
-                      <div className="search-btn">Book now</div>
+                      <div className="search-btn2">Book now</div>
                     </Link>
                   </div>
 
                   <div className="trending-tour-swiper-slide-information-links-elements">
-                    <FcLike />
+                    <FcLike  className="whitelikebtn" />
                   </div>
 
-                  <div>
-                    <IoIosShareAlt />
+                  <div className="trending-tour-swiper-slide-information-links-elements">
+                    <IoIosShareAlt className="text-white" />
                   </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-
-
 
           <SwiperSlide className="trending-tour-swiper-slide-wrapper">
             <div className="trending-tour-swiper-slide">
@@ -78,42 +98,54 @@ const TrendingTour = () => {
                 />
               </div>
               <div className="trending-tour-swiper-slide-information">
-                <div className="trending-tour-swiper-slide-information-title">
-                  <h1> New Zealnd tour for the weekend</h1>
-                  <p className="mt-[20px]">
-                    <span>Alaska, USA</span> {" "}
-                      4.9 stars
-                    ( 300 reviews) 
-                    
+                <div className="trending-tour-swiper-slide-information-title" style={{alignItems:'center'}}>
+                  <h1> WilderLife of Alaska</h1>
+                  <div className="trending-tour-swiper-slide-information-title-subinfo mt-[20px]">
+                    <span className="inline-flex">
+                      {" "}
+                      <IoLocation />{" "}
+                    </span>
+                    Alaska, USA 
+                    <span className="trending-tour-borddr-right"></span>
+                    <p className="review-stars inline-flex m-[ 0 5px] ">
+                      <span>
+                        <IoMdStar />
+
+                        <IoMdStar />
+
+                        <IoMdStar />
+                        <IoMdStar />
+
+                        <IoMdStar />
+                      </span>
+
+                    </p>
+                    {""} 4.9 stars ( 300 reviews)
+                  </div>
+                  <p className="mb-[20px]">
+                    This is the first slide it is a long established fact that a
+                    reader will be distracted by the readable content of a page
+                    when looking at its layout.
                   </p>
-                  <p className="mb-[20px]">This is the first slide it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>
                 <div className="trending-tour-swiper-slide-information-links">
                   <div className="trending-tour-swiper-slide-information-links-btn">
                     <Link href="/">
-                      <div className="search-btn">Book now</div>
+                      <div className="search-btn2">Book now</div>
                     </Link>
                   </div>
 
                   <div className="trending-tour-swiper-slide-information-links-elements">
-                    <FcLike />
+                    <FcLike  className="whitelikebtn" />
                   </div>
 
-                  <div>
-                    <IoIosShareAlt />
+                  <div className="trending-tour-swiper-slide-information-links-elements">
+                    <IoIosShareAlt className="text-white" />
                   </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-
-
-
-
-
-
-
-
         </Swiper>
       </div>
     </div>

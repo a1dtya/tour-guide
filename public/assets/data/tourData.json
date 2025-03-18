@@ -4,8 +4,9 @@
         "id": 1,
         "city_name": "New York",
         "slug": "new-york",
-        "image": "/assets/images/cities/nyc.jpg",
+       
         "image_alt": "new-york-image",
+        "image": "/assets/images/cities/nyc.jpg",
         "description": "A bustling metropolis blending traditional culture and futuristic technology.",
         "popularity": 10,
         "activities": [
@@ -49,10 +50,59 @@
         ],
         "related_city_tours": [
           {
-            "tour_id": 201,
+            "tour_id": 202,
             "tour_city_name": "London",
             "tour_slug": "london-eye",
-            "tour_image": "london-eye.jpg",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/nyc.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 203,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/cities/nyc.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 204,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/cities/nyc.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 205,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/cities/nyc.jpg",
             "duration": "1 hour",
             "options": ["guided"],
             "transport_facility_availability": "Available",
@@ -63,8 +113,12 @@
             },
             "availability": "Available"
           }
+
         ]
       },
+
+
+
 
 
 
@@ -101,7 +155,74 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 302,
+            "tour_city_name": "california",
+            "tour_slug": "california-eye",
+            "tour_city_title":"california: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/california.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 303,
+            "tour_city_name": "california",
+            "tour_slug": "california-eye",
+            "tour_city_title":"california: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/california.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 304,
+            "tour_city_name": "california",
+            "tour_slug": "california-eye",
+            "tour_city_title":"california: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/california.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          
+          {
+            "tour_id": 305,
+            "tour_city_name": "california",
+            "tour_slug": "california-eye",
+            "tour_city_title":"california: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/california.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+
+        ]
       },
       {
         "id": 3,
@@ -133,7 +254,73 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 202,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_slug": "london-eye",
+            "tour_image":  "/assets/images/alaska.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 203,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_slug": "london-eye",
+            "tour_image":  "/assets/images/alaska.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 204,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+
+            "tour_slug": "london-eye",
+            "tour_image":  "/assets/images/alaska.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 205,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+
+            "tour_slug": "london-eye",
+            "tour_image":  "/assets/images/alaska.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+
+        ]
       },
       {
         "id": 4,
@@ -166,7 +353,73 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 304,
+            "tour_city_name": "Sydney",
+            "tour_slug": "Sydney-eye",
+            "tour_city_title":"Sydney: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/australia.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 307,
+            "tour_city_name": "Sydney",
+            "tour_slug": "Sydney-eye",
+            "tour_city_title":"Sydney: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/australia.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 306,
+            "tour_city_name": "Sydney",
+            "tour_slug": "Sydney-eye",
+            "tour_city_title":"Sydney: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/australia.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          
+          {
+            "tour_id": 305,
+            "tour_city_name": "Sydney",
+            "tour_slug": "Sydney-eye",
+            "tour_city_title":"Sydney: Westminster to Greenwich River Thames",
+            "tour_image": "/assets/images/cities/australia.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+        ]
       },
       {
         "id": 5,
@@ -198,7 +451,72 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 202,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/london.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 203,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/london.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 204,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/london.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 205,
+            "tour_city_name": "London",
+            "tour_city_title":"Alaska: Westminster to Greenwich River Thames",
+            "tour_slug": "london-eye",
+            "tour_image": "/assets/images/london.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+
+        ]
       },
       {
         "id": 6,
@@ -232,7 +550,75 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 202,
+            "tour_city_name": "Dubai",
+            "tour_city_title":"Dubai: Westminster to Greenwich River Thames",
+            "tour_slug": "dubai-eye",
+            "tour_image":  "/assets/images/dubai.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 203,
+            
+            "tour_city_name": "Dubai",
+            "tour_city_title":"Dubai: Westminster to Greenwich River Thames",
+            "tour_slug": "dubai-eye",
+            "tour_image":  "/assets/images/dubai.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          
+          
+          {
+            "tour_id": 204,
+            "tour_city_name": "Dubai",
+            "tour_city_title":"Dubai: Westminster to Greenwich River Thames",
+            "tour_slug": "dubai-eye",
+            "tour_image":  "/assets/images/dubai.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 205,
+            "tour_city_name": "Dubai",
+            "tour_city_title":"Dubai: Westminster to Greenwich River Thames",
+            "tour_slug": "dubai-eye",
+            "tour_image":  "/assets/images/dubai.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+
+        ]
       },
       {
         "id": 7,
@@ -254,7 +640,7 @@
             "tour_id": 108,
             "tour_city_name": "Tokyo",
             "tour_slug": "tokyo-culinary-tour",
-            "tour_image": "tokyo-culinary.jpg",
+            "tour_image":"/assets/images/tokyo.jpg",
             "duration": "4 hours",
             "options": ["guided"],
             "transport_facility_availability": "Available",
@@ -266,7 +652,75 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 202,
+            "tour_city_name": "Tokyo",
+            "tour_city_title":"Tokyo: Westminster to Greenwich River Thames",
+            "tour_slug": "Tokyo-eye",
+            "tour_image": "/assets/images/tokyo.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 201,
+            "tour_city_name": "Tokyo",
+            "tour_city_title":"Tokyo: Westminster to Greenwich River Thames",
+            "tour_slug": "Tokyo-eye",
+            "tour_image": "/assets/images/tokyo.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          
+          {
+            "tour_id": 204,
+            "tour_city_name": "Tokyo",
+            "tour_city_title":"Tokyo: Westminster to Greenwich River Thames",
+            "tour_slug": "Tokyo-eye",
+            "tour_image": "/assets/images/tokyo.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          
+        {
+            "tour_id": 205,
+            "tour_city_name": "Tokyo",
+            "tour_city_title":"Tokyo: Westminster to Greenwich River Thames",
+            "tour_slug": "Tokyo-eye",
+            "tour_image": "/assets/images/tokyo.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+
+        ]
       },
       {
         "id": 8,
@@ -300,7 +754,73 @@
             "availability": "Available"
           }
         ],
-        "related_city_tours": []
+        "related_city_tours": [
+          {
+            "tour_id": 202,
+            "tour_city_name": "Delhi",
+            "tour_city_title":"Delhi: Westminster to Greenwich River Thames",
+            "tour_slug": "Delhi-eye",
+            "tour_image":"/assets/images/delhi.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },
+          {
+            "tour_id": 203,
+            "tour_city_name": "Delhi",
+            "tour_city_title":"Delhi: Westminster to Greenwich River Thames",
+            "tour_slug": "Delhi-eye",
+            "tour_image":"/assets/images/delhi.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 204,
+            "tour_city_name": "Delhi",
+            "tour_city_title":"Delhi: Westminster to Greenwich River Thames",
+
+            "tour_slug": "Delhi-eye",
+            "tour_image":"/assets/images/delhi.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          },{
+            "tour_id": 205,
+            "tour_city_name": "Delhi",
+            "tour_city_title":"Delhi: Westminster to Greenwich River Thames",
+
+            "tour_slug": "Delhi-eye",
+            "tour_image":"/assets/images/delhi.jpg",
+            "duration": "1 hour",
+            "options": ["guided"],
+            "transport_facility_availability": "Available",
+            "for_whom": ["family", "solo traveler"],
+            "review": {
+              "stars": [4.7, 4.8],
+              "total_reviews": 412
+            },
+            "availability": "Available"
+          }
+
+        ]
       }
     ],
 

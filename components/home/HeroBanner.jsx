@@ -5,6 +5,11 @@ import { FaPlay } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { PiUsersFill } from "react-icons/pi";
 import { SlCalender } from "react-icons/sl";
+import Image from "next/image";
+import bannerImage from "../../public/assets/media/home/herobanner/HeroBanner.png";
+import bannerImage2 from "../../public/assets/media/home/herobanner/gradient.png";
+
+// import heroBanner from '../../public/assets/images/hero-banner-2.mp4';
 
 const HeroBanner = () => {
   const [videoPopUp, setVideoPopUp] = useState(false);
@@ -16,10 +21,27 @@ const HeroBanner = () => {
 
   return (
     <div className="hero-banner-wrapper">
+      {/* 
+      <div className="hero-background-video-gradient">
+          <Image
+          src={bannerImage2}
+          alt="Banner Image"
+          fill={true}
+        style={{objectFit:"contain"}}
+          />
+
+
+        </div> */}
+
+      <div className="hero-background-video">
+        <Image src={bannerImage} alt="Banner Image" fill={true} />
+      </div>
+
+      {/* 
       <video autoPlay muted loop className="hero-background-video">
-        <source src="/assets/images/banner.mp4" type="video/mp4" />
+        <source src="/assets/images/hero-banner-3.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       <div className="hero-banner-information">
         <div className="hero-banner-title">
@@ -28,9 +50,9 @@ const HeroBanner = () => {
 
         <div className="hero-banner-description">
           <p>
-            Discover unforgettable experiences with our curated tours across the
-            world's most exciting cities. Whether you're seeking adventure,
-            culture, or relaxatione!
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
           </p>
         </div>
 
@@ -74,12 +96,12 @@ const HeroBanner = () => {
 
             <div className="searchbox-items-info">
               <p>date</p>
-              <input type="text" placeholder="Pick a date" />
+              <input type="date" placeholder="Pick a date" />
             </div>
           </div>
 
           <div className="searchbox-searchbar">
-            <div className="search-btn">search</div>
+            <div className="btn-type-2">search</div>
           </div>
         </div>
       </div>

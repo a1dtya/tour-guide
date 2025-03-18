@@ -1,21 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --logo-heading-2: #495560;
+  /* font color / bg color */
   --footer-bg: #13253f;
-  --footer-bg-dark: #0f1e32;
-  --color-secondary: #9333ea;
-  --color-background: #f5f8fa;
-  --color-white: #f5f8fa;
-  --color-text: #1c2b38;
-  --color-text-dark: #28302f;
-  --color-text-light-gray: #c7cad1;
-  --color-text-gray: #495560;
+  --footer-bg-dark: #00000033;
+  --logo-heading-2: #495560;
   --color-yellow: #ffda32;
   --color-orange: #ffa432;
+  --color-white: #ffffff;
+  --color-text: #1c2b38;
+  --color-text-dark: #1c2b38;
+  --color-text-light-gray: #778088;
+  --color-text-gray: #495560;
+  --color-text-light-gray2: #495560;
+  --icons-color: #495560;
   --color-green-light: #7bbcb0;
-  --border-color: #efefef;
+  --border-color: #cedadf;
+  --light-section-bg-color: #f9fafd;
+  --info-box-bg: #f9fdff;
+  --color-background: #ffffff;
+  --color-secondary: #48057d;
 
+  /* activity */
+  --activity-green: #affff0;
+  --activity-red: #ff6969;
+  --activity-blue: #59a9fe;
+  --activity-tag-blue: #5c9bde;
+  --activity-tag-yellow: #e4b613;
+  --activity-tag-green: #7bbcb0;
+  --activity-tag-pink: #d176e0;
+  --activity-tag-red: #fc3131;
+
+  /* buttons */
+  --btn-type-3-bg: #495560;
+  --btn-type-3-color: #ffffff;
+  --btn-type-3-text-size: 14px;
+
+  /* linear-gradient */
+  --tours-details-swiper-slide-box-shadow: 0px 8px 34px 0px #0000000f;
+  --pagination-box-shadow: 0px 8px 20px 0px #ffda3280;
+  --search-box-box-shadow: 0px 10px 30px 0px #7bbcb080;
+  --info-box-tags-box-shadow: 0px 4px 10px 0px #00000014;
+  --hero-banner-info-box-shadow: 0px 1px 20px 0px #ffffff;
+
+  --overlay-blur: 15px;
+
+  /* trending - tour */
+  --overlay-lineargradient-color-purple: #48057d;
+  --overlay-lineargradient-color-cyan: #2adde7;
+  --trending-tour-backdrop-filter: blur(15px);
+  --trending-bg-blur: 40px;
+
+  /* font-size */
+  --heading-font-size: 48px;
+  --info-title-font-size: 64px;
+  --subheading-font-size: 36px;
+  --information-font-size: 16px;
+  --icon-font-size:16px;
+  --information-font-size-sm: 14px;
+  --header-title-font-size: 26px;
+  --header-nav-font-size: 15px;
+
+  --header-title-fonts: NicoMoji; /* logo */
+  --heading-font: Volkhov; /* heading */
+  --heading-font-light: Volkhov-light; /* heading */
+  --information-font: Mulish; /* info */
+  --information-font-bold: MulishB;
+  --information-font-light: MulishLight; /* info */
+  --information-font-italics: MulishItalics ;
   --secondary-btn-color: #1e2e3b;
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -29,16 +81,71 @@
 
   --btn-border-radius: 4px;
 
-  --heading-text-font: Kanit; /* Logo text */
+  --heading-text-font: NicoMoji; /* Logo text */
   --sub-heading-text-font: NotoSans; /* information */
-  --information-text-font: Padauk; /* Header Links*/
-  --header-links-text-font: RobotoSlab; /* title */
+  --information-text-font: MulishB; /* Header Links*/
+  --header-links-text-font: MulishB; /* title */
 
   --box-shadow-default: 0 2px 8px rgba(0, 0, 0, 0.1);
   --box-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
+
+@font-face {
+  font-family: "NicoMoji";
+  src: url("../../../public/assets/fonts/nicoMoji/NicoMoji-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Volkhov";
+  src: url("../../../public/assets/fonts/Volkhov/Volkhov-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Volkhov-light";
+  src: url("../../../public/assets/fonts/Volkhov/Volkhov-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../../../public/assets/fonts/Mulish/static/Mulish-SemiBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MulishB";
+  src: url("../../../public/assets/fonts/Mulish/static/Mulish-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MulishLight";
+  src: url("../../../public/assets/fonts/Mulish/static/Mulish-Regular.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "MulishItalics";
+  src: url("../../../public/assets/fonts/Mulish/static/Mulish-BlackItalic.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+/*  delete  -> */
+
 @font-face {
   font-family: "Kanit";
   src: url("../../../public/assets/fonts/Kanit/Kanit-Regular.ttf");
@@ -73,15 +180,17 @@
   font-style: normal;
 }
 
-body {
-  background-color: var(--color-background);
+/* delete <- */
 
-  color: var(--color-text);
-  font-size: var(--font-size-md);
-  font-family: var(--information-text-font), sans-serif;
+body {
+  background-color: var(--color-white);
+  color: var(--color-text-light-gray);
+  font-size: var(--information-font-size);
+  font-family: var(--information-font), sans-serif;
 }
 
 .container {
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -91,33 +200,76 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: RobotoSlab-m;
+  font-family: var(--heading-font);
+  color: var(--color-text-dark);
 }
 
 .tourguide-title-text {
-  font-size: 30px;
+  font-size: var( --subheading-font-size);
 }
 .tourguide-info-text {
+  margin-top: 19px;
   font-size: 16px;
-  color: var(--color-text-gray);
+  color: var(--color-text-light-gray);
 }
 
-.primary-btn {
-  width: 120px;
-  align-items: center;
-  margin-left: 20px;
+.btn-type-1 {
+  height: 50px;
+  width: 140px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  border-radius: var(--btn-border-radius);
-  color: var(--color-text);
-  padding: 10px 20px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: all 0.5s;
   background-color: var(--color-yellow);
+  color: var(--color-text-dark);
+  align-items: center;
+  font-family: "MulishB";
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-.primary-btn:hover {
-  background-color: var(--color-orange);
+
+.btn-type-2 {
+  width: 150px;
+  height: 54px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-yellow);
+  color: var(--color-text-dark);
+  align-items: center;
+  font-family: "MulishB";
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 20px 0px #FFDA3280;
 }
+
+
+
+.btn-type-3 {
+  width: 190px;
+  height: 54px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-text-gray);
+  color: var(--color-white);
+  align-items: center;
+  font-family: "MulishB";
+  font-weight: bolder;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+
+}
+
+
 
 .banner-btn {
   width: 200px;
@@ -138,6 +290,7 @@ h6 {
   width: 120px;
   height: 50px;
   align-items: center;
+  font-size: 16px;
   margin-left: 0px;
   justify-content: center;
   display: flex;
@@ -151,6 +304,25 @@ h6 {
   transition: all 0.5s;
   background-color: var(--color-yellow);
 }
+.search-btn2 {
+  width: 170px;
+  height: 50px;
+  align-items: center;
+  font-size: 16px;
+  margin-left: 0px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  text-align: center;
+  border-radius: 30px;
+  color: var(--color-text);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s;
+  background-color: var(--color-yellow);
+}
+
 .search-btn:hover {
   background-color: var(--color-orange);
 }
@@ -171,4 +343,33 @@ h6 {
   font-size: 16px;
 }
 
+.swiper-button-next {
+  color: #000000;
+  background: var(--color-yellow);
+  font-size: 25px;
 
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  z-index: 10;
+  border: #ffda32;
+  box-shadow: rgba(255, 217, 50, 0.289) 0px 10px 30px;
+}
+
+.swiper-button-prev {
+  color: #000000;
+  background: var(--color-background);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ffda32;
+  cursor: pointer;
+  position: absolute;
+  right: 14%;
+  top: 10%;
+  z-index: 10;
+  box-shadow: rgba(255, 217, 50, 0.289) 0px 10px 30px;
+}

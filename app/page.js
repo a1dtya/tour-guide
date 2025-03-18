@@ -1,5 +1,5 @@
 import HeroBanner from "@/components/home/HeroBanner";
-import SearchBanner from "@/components/home/PopularCity";
+import  PopularCity from "@/components/home/PopularCity";
 import Gallery from "@/components/Gallery";
 import TrendingCity from "@/components/home/TrendingCity";
 import Blogs from "@/components/home/Blogs";
@@ -15,21 +15,18 @@ export default function Home() {
 
       <section className="home-searchBanner-section-wrapper">
         <div className="container">
-          <SearchBanner />
+          <PopularCity />
         </div>
       </section>
 
       <section className="home-trending-tour-section-wrapper">
-
-      <TrendingTour/>    
-
+        <TrendingTour />
       </section>
 
       <section className="home-featured-destinations-section-wrapper">
-        <div className="container">
-        <Destinations />
-        </div>
-      
+       
+          <Destinations />
+        
       </section>
 
       <section className="home-trending-city-section-wrapper">

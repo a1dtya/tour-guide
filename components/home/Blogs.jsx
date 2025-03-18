@@ -12,17 +12,13 @@ const Blogs = () => {
       <div className="gallery-title">
         <div className="gallery-title-heading">
           <h1 className="tourguide-title-text">Latest stories</h1>
-          <p className="tourguide-info-text mt-[10px]">
-            See our blogs and the stories it holds, it imports to get an idea
-            about the tours
+          <p className="tourguide-info-text mt-[10px] w-2/3">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit
           </p>
-          <p className="tourguide-info-text">
-    
-            and everything related about it.
-          </p>
+         
         </div>
         <div className="gallery-title-btn">
-          <div className="btn-secondary" onClick={toggleShowALl}>
+          <div className="btn-type-3" onClick={toggleShowALl}>
             View All posts
           </div>
         </div>
@@ -32,11 +28,11 @@ const Blogs = () => {
         <div className="blogs-card">
           <div className="blog-card-image">
             <Image
-              src={"/assets/images/alaska.jpg"}
+               src={"/assets/media/blogs/blog1.png"}
               alt="Blog Image"
               width={100}
               height={200}
-              style={{ width: "100%", objectFit: "cover" }}
+              style={{ width: "100%", minHeight:"200px", objectFit: "cover" }}
             />
           </div>
           <div className="blog-card-author-info">
@@ -45,8 +41,8 @@ const Blogs = () => {
                 <Image
                   src={"/assets/images/blogs/team1.jpg"}
                   alt="author"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                   style={{ borderRadius: "50%" }}
                 />
               </div>
@@ -55,7 +51,7 @@ const Blogs = () => {
               </div>
             </div>
             <div className="blog-card-description">
-              <h3>7 signs and symptoms of Iodine Deficiency</h3>
+              <p>7 signs and symptoms of Iodine Deficiency</p>
             </div>
           </div>
         </div>
@@ -63,11 +59,11 @@ const Blogs = () => {
         <div className="blogs-card">
           <div className="blog-card-image">
             <Image
-              src={"/assets/images/alaska.jpg"}
+             src={"/assets/media/blogs/blog2.png"}
               alt="Blog Image"
               width={100}
               height={200}
-              style={{ width: "100%", objectFit: "cover" }}
+              style={{ width: "100%", minHeight:"200px", objectFit: "cover" }}
             />
           </div>
           <div className="blog-card-author-info">
@@ -86,7 +82,7 @@ const Blogs = () => {
               </div>
             </div>
             <div className="blog-card-description">
-              <h3>7 signs and symptoms of Iodine Deficiency</h3>
+              <p>How to Fix Your Sleep Schedule: 7 Easy Ways</p>
             </div>
           </div>
         </div>
@@ -94,11 +90,11 @@ const Blogs = () => {
         <div className="blogs-card">
           <div className="blog-card-image">
             <Image
-              src={"/assets/images/alaska.jpg"}
+              src={"/assets/media/blogs/blog3.png"}
               alt="Blog Image"
               width={100}
               height={200}
-              style={{ width: "100%", objectFit: "cover" }}
+              style={{ width: "100%", minHeight:"200px", objectFit: "cover" }}
             />
           </div>
           <div className="blog-card-author-info">
@@ -117,7 +113,7 @@ const Blogs = () => {
               </div>
             </div>
             <div className="blog-card-description">
-              <h3>7 signs and symptoms of Iodine Deficiency</h3>
+              <p>10 Proven Health Benefits of Cinnamon</p>
             </div>
           </div>
         </div>
@@ -126,12 +122,12 @@ const Blogs = () => {
 
         <div className="blogs-card">
           <div className="blog-card-image">
-            <Image
-              src={"/assets/images/alaska.jpg"}
+            <Image  
+              src={"/assets/media/blogs/blog4.png"}
               alt="Blog Image"
               width={100}
               height={200}
-              style={{ width: "100%", objectFit: "cover" }}
+              style={{ width: "100%", minHeight:"200px",  objectFit: "cover" }}
             />
           </div>
           <div className="blog-card-author-info">
@@ -150,7 +146,7 @@ const Blogs = () => {
               </div>
             </div>
             <div className="blog-card-description">
-              <h3>7 signs and symptoms of Iodine Deficiency</h3>
+              <p>11 Health Benefits of Turmeric and Curcumin</p>
             </div>
           </div>
         </div>
