@@ -8,6 +8,7 @@ import { SlCalender } from "react-icons/sl";
 import Image from "next/image";
 import bannerImage from "../../public/assets/media/home/herobanner/HeroBanner.png";
 import bannerImage2 from "../../public/assets/media/home/herobanner/gradient.png";
+import { IoIosCloseCircle } from "react-icons/io";
 
 // import heroBanner from '../../public/assets/images/hero-banner-2.mp4';
 
@@ -18,6 +19,10 @@ const HeroBanner = () => {
     setVideoPopUp(!videoPopUp);
     console.log("startplaying changd");
   };
+  const closeModal = () => {
+    setVideoPopUp(false);
+  };
+
 
   return (
     <div className="hero-banner-wrapper">
@@ -33,15 +38,15 @@ const HeroBanner = () => {
 
         </div> */}
 
-      <div className="hero-background-video">
+      {/* <div className="hero-background-video">
         <Image src={bannerImage} alt="Banner Image" fill={true} />
-      </div>
+      </div> */}
 
-      {/* 
+      
       <video autoPlay muted loop className="hero-background-video">
         <source src="/assets/images/hero-banner-3.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video> */}
+      </video>
 
       <div className="hero-banner-information">
         <div className="hero-banner-title">
@@ -105,6 +110,24 @@ const HeroBanner = () => {
           </div>
         </div>
       </div>
+
+            {/* Modal-video */}
+      {videoPopUp && (
+        <div className="video-modal-overlay" onClick={closeModal}>
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="video-modal-header">
+              <button onClick={closeModal} className="close-btn"><IoIosCloseCircle/></button>
+            </div>
+            <div className="video-player-container">
+              <video width="100%" height="100%" controls autoPlay>
+                <source src="/assets/images/hero-banner-3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

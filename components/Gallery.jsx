@@ -53,13 +53,22 @@ const Gallery = () => {
           <div
             key={item.id}
             className="gallery-card"
-            style={{ backgroundImage: `url(${item.url})` }}
+            // style={{ backgroundImage: `url(${item.url})` }}
             // initial="hidden"
             // whileInView="visible"
             // variants={itemVariants}
             // transition={{ duration: 1, delay: index * 0.1 }}
             // viewport={{ once: true }}
-          ></div>
+          >
+            <Image
+              src={item.url}
+              alt="image"
+              width={100}
+              height={200}
+              quality={95}
+              // style={{ width: "100%", height: "100%", aspectRatio: "4/5" }}
+            />
+          </div>
         ))}
       </div>
     </div>

@@ -3,15 +3,22 @@
 import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import Image from "next/image";
+import { IoIosCloseCircle } from "react-icons/io";
 
 
 const TrendingCity = () => {
   const [openVideoModel, setOpenVideoModel] = useState(false);
+  const [videoPopUp, setVideoPopUp] = useState(false);
 
   const playVideo = () => {
-    setOpenVideoModel(!openVideoModel);
-    console.log("now Playing the video : ");
+    setVideoPopUp(!videoPopUp);
+    console.log("startplaying changd");
   };
+  const closeModal = () => {
+    setVideoPopUp(false);
+  };
+
+  
 
   return (
     <div className="trending-city-wrapper">
@@ -73,6 +80,21 @@ const TrendingCity = () => {
 
         <div className="btn-type-2">Explore Now</div>
       </div>
+           {videoPopUp && (
+              <div className="video-modal-overlay" onClick={closeModal}>
+                <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+                  <div className="video-modal-header">
+                    <button onClick={closeModal} className="close-btn"><IoIosCloseCircle/></button>
+                  </div>
+                  <div className="video-player-container">
+                    <video width="100%" height="100%" controls autoPlay>
+                    <source src="/assets/images/videoBanner/london2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            )}
     </div>
   );
 };

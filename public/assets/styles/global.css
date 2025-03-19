@@ -56,18 +56,19 @@
   --info-title-font-size: 64px;
   --subheading-font-size: 36px;
   --information-font-size: 16px;
-  --icon-font-size:16px;
+  --icon-font-size: 16px;
   --information-font-size-sm: 14px;
   --header-title-font-size: 26px;
   --header-nav-font-size: 15px;
 
   --header-title-fonts: NicoMoji; /* logo */
   --heading-font: Volkhov; /* heading */
+  --heading-font-bold: VolkhovB;
   --heading-font-light: Volkhov-light; /* heading */
   --information-font: Mulish; /* info */
   --information-font-bold: MulishB;
   --information-font-light: MulishLight; /* info */
-  --information-font-italics: MulishItalics ;
+  --information-font-italics: MulishItalics;
   --secondary-btn-color: #1e2e3b;
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -96,6 +97,12 @@
   font-family: "NicoMoji";
   src: url("../../../public/assets/fonts/nicoMoji/NicoMoji-Regular.ttf");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VolkhovB";
+  src: url("../../../public/assets/fonts/Volkhov/Volkhov-Bold.ttf");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -133,16 +140,12 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "MulishItalics";
   src: url("../../../public/assets/fonts/Mulish/static/Mulish-BlackItalic.ttf");
   font-weight: 600;
   font-style: normal;
 }
-
-
-
 
 /*  delete  -> */
 
@@ -205,12 +208,23 @@ h6 {
 }
 
 .tourguide-title-text {
-  font-size: var( --subheading-font-size);
+  font-size: var(--subheading-font-size);
 }
 .tourguide-info-text {
   margin-top: 19px;
   font-size: 16px;
   color: var(--color-text-light-gray);
+}
+
+@media (max-width: 450px) {
+  .tourguide-title-text {
+    font-size: 25px;
+  }
+  .tourguide-info-text {
+    /* margin-top: 19px; */
+    font-size: 12px;
+    /* color: var(--color-text-light-gray); */
+  }
 }
 
 .btn-type-1 {
@@ -245,10 +259,8 @@ h6 {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.5s;
-  box-shadow: 0px 8px 20px 0px #FFDA3280;
+  box-shadow: 0px 8px 20px 0px #ffda3280;
 }
-
-
 
 .btn-type-3 {
   width: 190px;
@@ -265,11 +277,27 @@ h6 {
   font-size: 14px;
   cursor: pointer;
   transition: all 0.5s;
-  
-
 }
 
+.btn-type-4 {
 
+  width: 210px;
+  height: 50px;
+  margin: 20px 0 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "MulishB";
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 3px;
+  gap: 10px;
+  color: var(--color-white);
+  padding-top: 14px 80px;
+  background: var(--color-green-light);
+}
 
 .banner-btn {
   width: 200px;
@@ -341,6 +369,20 @@ h6 {
   cursor: pointer;
   text-transform: capitalize;
   font-size: 16px;
+}
+
+@media (max-width: 450px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .btn-type-2,
+  .btn-type-3 {
+    font-size: 12px !important;
+  }
+  .btn-bg {
+    transform: scale(0.56) !important;
+  }
 }
 
 .swiper-button-next {

@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 const Header = () => {
 
-  const [isHomePage, setIsHomePage] = useState(true);
+  const [isHomePage, setIsHomePage] = useState(false);
 
   const [isAtTop, setIsAtTop] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,7 +62,7 @@ const Header = () => {
               tour guide
             </Link>
           </div>
-          <div className="hidden md:flex header-nav-wrapper">
+          <div className="hidden lg:flex header-nav-wrapper">
             <div className="header-nav">
               <nav className="header-nav-links">
                 <ul>
@@ -91,7 +91,7 @@ const Header = () => {
           </div>
 
           <div
-            className="flex md:hidden lg:hidden header-burgermenu"
+            className="flex  lg:hidden header-burgermenu"
             onClick={toggleMenu}
           >
             {isMenuOpen ? (

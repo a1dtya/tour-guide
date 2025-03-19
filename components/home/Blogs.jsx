@@ -9,7 +9,7 @@ const Blogs = () => {
 
   return (
     <div className="home-latest-blogs-wrapper">
-      <div className="gallery-title">
+      <div className="gallery-title blogs-heading ">
         <div className="gallery-title-heading">
           <h1 className="tourguide-title-text">Latest stories</h1>
           <p className="tourguide-info-text mt-[10px] w-2/3">

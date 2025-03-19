@@ -53,7 +53,7 @@ const Popularcities = () => {
     <div className="popularcity-wrapper">
       <div className="popularcity">
         <div className="popularcity-title">
-          <h2>Explore Popular Cities</h2>
+          <h2>Explore Popular Cities</h2> 
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit
@@ -76,9 +76,9 @@ const Popularcities = () => {
         <div
           key={selectedCity}
           className="popularcity-banner-image"
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-          // transition={{ duration: 1.5 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
         >
           <Image
             src={tourCity.image}
@@ -90,16 +90,16 @@ const Popularcities = () => {
 
           <div className="popularcity-banner-city-info ">
             <div className="popularcity-banner-city-info-content w-full lg:w-2/3">
-              <div
-                // key={selectedCity}
-                // initial={{ opacity: 0 }}
-                // animate={{ opacity: 1 }}
-                // transition={{ duration: 2 }}
+              <motion.div
+                key={selectedCity}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
                 className="popularcity-banner-city-info-content-text-heading"
               >
                 <h2>{tourCity.city_name}</h2>
                 <p>{tourCity.description}</p>
-              </div>
+              </motion.div>
             </div>
             <div
               // key={selectedCity}
